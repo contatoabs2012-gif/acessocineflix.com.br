@@ -50,28 +50,28 @@ export default function Footer() {
 
         {/* Disclaimer Legal */}
         <div className="border-t border-white/5 pt-10 text-center max-w-4xl mx-auto">
-          <p className="text-white/20 text-[10px] md:text-xs leading-relaxed mb-8">
+          <p className="text-white/50 text-[10px] md:text-xs leading-relaxed mb-8 italic">
             Esta página não tem qualquer vínculo com o Facebook S/A e suas empresas, apenas usamos a plataforma para promover os nossos produtos. Ao sair da plataforma toda responsabilidade sobre produtos vendidos e ofertados é de inteira responsabilidade da nossa empresa, bem como se houver quaisquer eventualidades legais. Declaramos que o Facebook S/A não tem qualquer vínculo de associação em processos cíveis ou criminais.
           </p>
           
-          <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl mb-8">
-            <p className="text-red-500/60 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+          <div className="bg-red-500/10 border border-red-500/30 p-4 rounded-xl mb-8">
+            <p className="text-red-500/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">
               Atenção: Não compre produtos piratas. Não vendemos em marketplaces como Mercado Livre, Shopee ou OLX.
             </p>
           </div>
 
-          <div className="text-white/40 text-[10px] md:text-xs">
+          <div className="text-white/70 text-[10px] md:text-xs font-medium">
             © {new Date().getFullYear()} ACESSO CINEFLIX - Todos os direitos reservados.
           </div>
 
           {/* Web Evo Signature */}
           <div className="flex flex-col items-center gap-3 mt-10 pt-8 border-t border-white/5">
-            <p className="text-white/20 text-[10px] uppercase tracking-[3px] font-medium">Este site foi desenvolvido pela</p>
+            <p className="text-white/40 text-[10px] uppercase tracking-[3px] font-bold">Desenvolvido pela</p>
             <a 
               href="https://webevo.com.br/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="opacity-30 hover:opacity-100 transition-all duration-500 transform hover:scale-110"
+              className="opacity-70 hover:opacity-100 transition-all duration-500 transform hover:scale-110"
             >
               <img src="/logo-webevo.svg" alt="Web Evo" className="h-[30px] md:h-[36px] w-auto" />
             </a>
