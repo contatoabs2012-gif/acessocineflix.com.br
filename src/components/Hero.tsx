@@ -35,7 +35,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto px-4 w-full mt-40 lg:mt-0">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 w-full mt-[150px] lg:mt-0">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-24 w-full">
           
           {/* Lado do Conteúdo (Texto e Logo) */}
@@ -44,7 +44,7 @@ export default function Hero() {
 
 
             {/* HEADLINE */}
-            <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 lg:mb-6 uppercase tracking-tight">
+            <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-4 lg:mb-6 uppercase tracking-tight">
               Milhares de canais, <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BE63D1] to-[#E561A7]">
                 filmes e séries
@@ -52,14 +52,14 @@ export default function Hero() {
             </h1>
 
             {/* IMAGEM NO MOBILE (Aparece logo abaixo da headline) */}
-            <div className="block lg:hidden w-full mb-8">
+            <div className="block lg:hidden w-full mb-5">
                <div className="flex justify-center">
                   {heroImage}
                </div>
             </div>
             
             {/* DESCRIÇÃO */}
-            <p className="text-base md:text-xl text-white/80 mb-8 lg:mb-10 max-w-xl font-medium px-4 lg:px-0">
+            <p className="text-base md:text-xl text-white/80 mb-6 lg:mb-10 max-w-xl font-medium px-4 lg:px-0">
               O catálogo mais completo do Brasil. Assista Netflix, Disney+, Premiere e centenas de canais ao vivo em qualquer dispositivo.
             </p>
 
