@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Navbar from "@/components/Navbar";
-import StickyCTA from "@/components/StickyCTA";
+
 import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
@@ -50,7 +50,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-black">
         <Navbar />
         {children}
-        <StickyCTA />
+
         <CookieConsent />
       </body>
       <GoogleTagManager gtmId="GTM-XXXXXXX" />
