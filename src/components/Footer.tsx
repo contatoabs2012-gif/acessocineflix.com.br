@@ -63,6 +63,19 @@ export default function Footer() {
           <div className="text-white/40 text-[10px] md:text-xs">
             © {new Date().getFullYear()} ACESSO CINEFLIX - Todos os direitos reservados.
           </div>
+
+          {/* Web Evo Signature */}
+          <div className="flex flex-col items-center gap-3 mt-10 pt-8 border-t border-white/5">
+            <p className="text-white/20 text-[10px] uppercase tracking-[3px] font-medium">Este site foi desenvolvido pela</p>
+            <a 
+              href="https://webevo.com.br/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="opacity-30 hover:opacity-100 transition-all duration-500 transform hover:scale-110"
+            >
+              <img src="/logo-webevo.svg" alt="Web Evo" className="h-[30px] md:h-[36px] w-auto" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
