@@ -17,10 +17,10 @@
 
 ## Phase 3: Conversão e Prova Social (Abaixo da dobra)
 **Goal**: Desenvolver os componentes que matam as objeções e direcionam para a compra.
-- [ ] Desenvolver o componente de Preços (`Pricing.tsx`) exibindo os planos de forma clara e atrativa.
-- [ ] Criar a seção de Benefícios/Features destacando os diferenciais do serviço.
-- [ ] Implementar o componente de Prova Social/Depoimentos (`Testimonials.tsx`).
-- [ ] Implementar a seção de Perguntas Frequentes (`FAQ.tsx`) com funcionalidade de Accordion.
+- [x] Desenvolver o componente de Preços (`Pricing.tsx`) exibindo os planos de forma clara e atrativa.
+- [x] Criar a seção de Benefícios/Features destacando os diferenciais do serviço.
+- [x] Implementar o componente de Prova Social/Depoimentos (`Testimonials.tsx`).
+- [x] Implementar a seção de Perguntas Frequentes (`FAQ.tsx`) com funcionalidade de Accordion.
 
 ## Phase 4: Otimizações e Finalização
 **Goal**: Inserir gatilhos visuais avançados e polimento final para máxima performance.

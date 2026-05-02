@@ -19,6 +19,8 @@ Velocidade extrema e design persuasivo para maximizar a conversão de cliques em
 - ✓ Configuração centralizada de links de afiliado — Phase 1
 - ✓ Desenvolver estrutura visual base e Hero Section (High Conversion) — Phase 2
 - ✓ Navbar e Footer responsivos — Phase 2
+- ✓ Implementar seções de Preços, FAQ e Prova Social — Phase 3
+- ✓ Interatividade nativa (Accordions) — Phase 3
 
 ### Active
 
