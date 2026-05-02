@@ -17,6 +17,8 @@ Velocidade extrema e design persuasivo para maximizar a conversão de cliques em
 - ✓ Implementar framework Next.js — Phase 1
 - ✓ Otimizar SEO técnico (Meta tags, Semântica, OpenGraph) — Phase 1
 - ✓ Configuração centralizada de links de afiliado — Phase 1
+- ✓ Desenvolver estrutura visual base e Hero Section (High Conversion) — Phase 2
+- ✓ Navbar e Footer responsivos — Phase 2
 
 ### Active
 

@@ -10,10 +10,10 @@
 
 ## Phase 2: Core Components & Layout (Above the Fold)
 **Goal**: Desenvolver as estruturas de navegação e a primeira tela de impacto (Hero), que é a mais crítica para a conversão.
-- [ ] Criar Navbar responsiva (Logo e botão de CTA de âncora).
-- [ ] Desenvolver o componente `Hero.tsx` com Headline focada em conversão, subtítulo de benefícios e botão de Call-to-Action principal apontando para os links.
-- [ ] Garantir que o LCP (Largest Contentful Paint) no Hero seja inferior a 1 segundo, priorizando o carregamento de imagens necessárias.
-- [ ] Implementar o rodapé (`Footer.tsx`) com links legais e disclaimer de afiliado (caso exigido por regras).
+- [x] Criar Navbar responsiva (Logo e botão de CTA de âncora).
+- [x] Desenvolver o componente `Hero.tsx` com Headline focada em conversão, subtítulo de benefícios e botão de Call-to-Action principal apontando para os links.
+- [x] Garantir que o LCP (Largest Contentful Paint) no Hero seja inferior a 1 segundo, priorizando o carregamento de imagens necessárias.
+- [x] Implementar o rodapé (`Footer.tsx`) com links legais e disclaimer de afiliado (caso exigido por regras).
 
 ## Phase 3: Conversão e Prova Social (Abaixo da dobra)
 **Goal**: Desenvolver os componentes que matam as objeções e direcionam para a compra.
