@@ -24,7 +24,7 @@
 
 ## Phase 4: Otimizações e Finalização
 **Goal**: Inserir gatilhos visuais avançados e polimento final para máxima performance.
-- [ ] Implementar o Sticky CTA no Mobile (botão flutuante inferior).
-- [ ] Adicionar micro-interações de CSS (hovers, transições suaves).
-- [ ] Realizar auditoria completa de performance (Lighthouse) para garantir a pontuação máxima 90+.
-- [ ] Validar a inserção final das imagens WebP (entregues pelo usuário) e ajustar as resoluções e metadados finais de todos os links de afiliado.
+- [x] Implementar o Sticky CTA no Mobile (botão flutuante inferior).
+- [x] Adicionar micro-interações de CSS (hovers, transições suaves).
+- [x] Realizar auditoria completa de performance (Lighthouse) para garantir a pontuação máxima 90+.
+- [x] Validar a inserção final das imagens WebP (entregues pelo usuário) e ajustar as resoluções e metadados finais de todos os links de afiliado.

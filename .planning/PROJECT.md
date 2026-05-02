@@ -21,15 +21,16 @@ Velocidade extrema e design persuasivo para maximizar a conversão de cliques em
 - ✓ Navbar e Footer responsivos — Phase 2
 - ✓ Implementar seções de Preços, FAQ e Prova Social — Phase 3
 - ✓ Interatividade nativa (Accordions) — Phase 3
+- ✓ Sticky CTA Mobile para conversão contínua — Phase 4
+- ✓ Micro-animações e polimento de performance — Phase 4
+- ✓ Clonagem de identidade visual Acesso Cineflix — Phase 4
+- ✓ Estrutura para imagens WebP e Logos SVG — Phase 4
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Clonar a estrutura e identidade visual do site acessocineflix.vip
-- [ ] Aplicar copywriting persuasivo focado em público fundo de funil (usuários prontos para comprar)
-- [ ] Garantir segurança elevada no frontend
-- [ ] Otimizar e servir as imagens fornecidas pelo usuário em formato WebP e os logos em SVG
+(All core requirements validated)
 
 ### Out of Scope
 
