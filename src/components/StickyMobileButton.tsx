@@ -45,20 +45,23 @@ export default function StickyMobileButton() {
       }`}>
         <div className="bg-black/90 backdrop-blur-md border-b border-white/10 px-4 py-4">
           <div className="flex flex-col items-center gap-2 max-w-sm mx-auto">
-            {!scrolled && (
-              <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest animate-pulse text-center">
-                JÁ É NOSSO CLIENTE? <br /> RENOVE SEU PLANO AGORA
-              </span>
-            )}
             <a 
               href="#planos" 
               onClick={(e) => { e.preventDefault(); setIsOpen(true); }}
               className={`flex items-center justify-center w-full bg-gradient-to-r from-[#BE63D1] to-[#E561A7] text-white rounded-2xl font-bold uppercase tracking-tight shadow-lg active:scale-95 transition-all whitespace-nowrap ${
-                scrolled ? 'py-2 text-sm px-4' : 'py-5 text-lg px-2'
+                scrolled ? 'py-2 text-sm px-4' : 'py-3 px-2'
               }`}
             >
-              <span className={`${scrolled ? 'mr-1 text-base' : 'mr-2 text-xl'}`}>⚡</span> 
-              RENOVE SEU PLANO AGORA
+              <div className="flex flex-col items-center justify-center">
+                {!scrolled && (
+                  <span className="text-[14px] opacity-95 leading-none mb-1 tracking-[1px] [text-shadow:_0_2px_4px_rgba(75,0,130,1)]">
+                    JÁ É NOSSO CLIENTE?
+                  </span>
+                )}
+                <span className={`${scrolled ? 'text-sm' : 'text-[24px]'} leading-none font-black tracking-[1px] [text-shadow:_0_2px_8px_rgba(75,0,130,1)]`}>
+                  RENOVE AGORA
+                </span>
+              </div>
             </a>
           </div>
         </div>

@@ -35,7 +35,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto px-4 w-full mt-52 lg:mt-0">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 w-full mt-44 lg:mt-0">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-24 w-full">
           
           {/* Lado do Conteúdo (Texto e Logo) */}
