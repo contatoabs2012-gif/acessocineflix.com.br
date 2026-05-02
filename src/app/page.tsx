@@ -10,11 +10,21 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <Hero />
-      <Features />
-      <Pricing />
-      <Testimonials />
-      <FAQ />
+      <div className="animate-fade-in-up">
+        <Hero />
+      </div>
+      <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+        <Features />
+      </div>
+      <div className="animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+        <Pricing />
+      </div>
+      <div className="animate-fade-in-up" style={{ animationDelay: '600ms' }}>
+        <Testimonials />
+      </div>
+      <div className="animate-fade-in-up" style={{ animationDelay: '800ms' }}>
+        <FAQ />
+      </div>
       <Footer />
     </main>
   );
