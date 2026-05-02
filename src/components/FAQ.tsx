@@ -1,56 +1,76 @@
 'use client';
-
 import { useState } from 'react';
 
-const faqs = [
+const faqItems = [
   {
-    question: "Como recebo meu acesso?",
-    answer: "Após a confirmação do pagamento, você receberá os dados de acesso automaticamente no seu e-mail e via WhatsApp cadastrado."
+    q: "Precisa de Internet para funcionar?",
+    a: "Sim, o App Cineflix precisa de internet para o seu funcionamento, mas devido o sinal potencializado de nosso satélite próprio, uma internet básica é mais que o suficiente para rodar videos 4k. Temos clientes que usam conectados na internet 4g do celular e funciona normalmente sem travas."
   },
   {
-    question: "Preciso de aparelhos específicos?",
-    answer: "Não! Você pode assistir em Smart TVs, Celulares (Android/iOS), Tablets, Computadores ou TV Boxes."
+    q: "Precisa de especialista para configurar?",
+    a: "NÃO, nosso sistema é muito simples de instalar, ensinamos passo a passo detalhado pra você conseguir acompanhar e colocar tudo para funcionar."
   },
   {
-    question: "É seguro assinar pelo site?",
-    answer: "Sim, utilizamos as plataformas de pagamento mais seguras do Brasil. Seus dados estão 100% protegidos por criptografia."
+    q: "O pagamento é mensal?",
+    a: "Sim, nós trabalhamos com 4 planos: R$24,90 (Mensal), R$43,90 (Trimestral), R$72,90 (Semestral) e R$137,90 (Anual)."
   },
   {
-    question: "Posso cancelar quando quiser?",
-    answer: "Sim, nossos planos não possuem fidelidade. Você pode cancelar a renovação a qualquer momento sem taxas extras."
+    q: "Moro em zona rural, funciona pra mim?",
+    a: "Sim! Funciona em toda zona rural do Brasil, com uma internet básica, ou até mesmo 3g, 4g do celular você consegue assistir normalmente sem travamentos."
+  },
+  {
+    q: "Cineflix funciona em Angola?",
+    a: "Sim! Cineflix funciona em toda Angola e todas as províncias, você vai assistir sem travamentos e a milhares de conteúdos."
+  },
+  {
+    q: "Quantos canais são liberados?",
+    a: "Você vai ter acesso a mais de 2 mil canais abertos e fechados, Netflix, Amazon Prime, Disney+, Max, Globoplay, e muito mais!"
+  },
+  {
+    q: "Como vou receber o acesso?",
+    a: "Imediatamente! Após o pagamento ser confirmado, nossa plataforma enviará no seu e-mail o acesso para a plataforma, e todos os tutoriais de como usar em qualquer aparelho."
+  },
+  {
+    q: "Em quantos aparelhos posso usar?",
+    a: "Nossos planos têm capacidade para até 4 telas simultâneas, variando de acordo com o pacote escolhido."
   }
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-slate-950/50">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">Dúvidas Frequentes</h2>
-        
+    <section className="py-24 bg-[#0a0510]" id="faq">
+      <div className="max-w-3xl mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+            Ainda com <span className="text-[#BE63D1]">Dúvidas?</span>
+          </h2>
+          <p className="text-white/60">Tudo o que você precisa saber antes de assinar.</p>
+        </div>
+
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
+          {faqItems.map((item, index) => (
             <div 
               key={index} 
-              className="border border-white/10 rounded-2xl overflow-hidden bg-white/5"
+              className="border border-white/10 rounded-2xl overflow-hidden bg-black/40 transition-all duration-300"
             >
               <button 
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
+                className="w-full px-6 py-5 flex items-center justify-between text-left group hover:bg-white/5 transition-colors"
               >
-                <span className="font-bold text-lg">{faq.question}</span>
-                <span className={`text-brand-primary text-2xl transition-transform ${openIndex === index ? 'rotate-45' : ''}`}>
-                  +
+                <span className="text-white font-bold text-lg md:text-xl pr-8">{item.q}</span>
+                <span className={`text-[#BE63D1] transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </span>
               </button>
               
-              <div className={`px-6 transition-all duration-300 ease-in-out ${
-                openIndex === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'
-              } overflow-hidden`}>
-                <p className="text-foreground/60 leading-relaxed">
-                  {faq.answer}
-                </p>
+              <div className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100 py-6' : 'max-h-0 opacity-0'}`}>
+                <div className="px-6 text-white/70 leading-relaxed text-lg">
+                  {item.a}
+                </div>
               </div>
             </div>
           ))}

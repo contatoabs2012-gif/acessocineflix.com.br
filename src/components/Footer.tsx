@@ -1,26 +1,68 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
-    <footer className="bg-background border-t border-white/5 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-center md:text-left">
-            <span className="text-xl font-bold text-brand-primary tracking-tighter">CINEFLIX</span>
-            <p className="mt-2 text-sm text-foreground/50">
-              © {new Date().getFullYear()} Acesso Cineflix. Todos os direitos reservados.
+    <footer className="bg-black pt-20 pb-10 border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-center md:text-left">
+          
+          {/* Logo e Bio */}
+          <div className="flex flex-col items-center md:items-start lg:col-span-1">
+            <img src="/acesso-cineflix-logo.svg" className="h-10 mb-6" alt="Cineflix Logo" />
+            <p className="text-white/40 text-sm max-w-xs">
+              A melhor experiência de entretenimento digital do Brasil. Satélite exclusivo e sinal sem travamentos.
             </p>
           </div>
-          
-          <div className="flex gap-6 text-sm text-foreground/60">
-            <a href="#" className="hover:text-brand-primary transition-colors">Termos de Uso</a>
-            <a href="#" className="hover:text-brand-primary transition-colors">Privacidade</a>
-            <a href="#" className="hover:text-brand-primary transition-colors">Suporte</a>
+
+          {/* Navegação */}
+          <div className="flex flex-col items-center md:items-start">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Navegação</h4>
+            <ul className="space-y-4">
+              <li><Link href="/" className="text-white/40 hover:text-[#BE63D1] transition-colors text-sm">Início</Link></li>
+              <li><Link href="/planos" className="text-white/40 hover:text-[#BE63D1] transition-colors text-sm">Nossos Planos</Link></li>
+              <li><Link href="/suporte" className="text-white/40 hover:text-[#BE63D1] transition-colors text-sm">Suporte Oficial</Link></li>
+              <li><Link href="/politica-de-privacidade" className="text-white/40 hover:text-[#BE63D1] transition-colors text-sm">Política de Privacidade</Link></li>
+            </ul>
+          </div>
+
+          {/* Suporte */}
+          <div className="flex flex-col items-center md:items-start">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Atendimento</h4>
+            <p className="text-[#BE63D1] font-bold text-base mb-2">suporte@acessocineflix.vip</p>
+            <p className="text-white/40 text-sm">Atendimento prioritário via WhatsApp para clientes ativos.</p>
+          </div>
+
+          {/* Selos de Confiança */}
+          <div className="flex flex-col items-center md:items-start">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Segurança</h4>
+            <div className="flex flex-col gap-3 w-full">
+               <div className="border border-white/10 rounded-lg px-4 py-2 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-white/60 text-[10px] font-bold uppercase tracking-tight">Ambiente Criptografado</span>
+               </div>
+               <div className="border border-white/10 rounded-lg px-4 py-2 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[#BE63D1] rounded-full"></div>
+                  <span className="text-white/60 text-[10px] font-bold uppercase tracking-tight">Sinal Satélite Estável</span>
+               </div>
+            </div>
           </div>
         </div>
-        
-        <div className="mt-8 pt-8 border-t border-white/5 text-center">
-          <p className="text-[10px] text-foreground/30 uppercase tracking-widest">
-            Aviso: Este é um site de afiliado independente. A entrega do conteúdo é de responsabilidade da plataforma oficial.
+
+        {/* Disclaimer Legal */}
+        <div className="border-t border-white/5 pt-10 text-center max-w-4xl mx-auto">
+          <p className="text-white/20 text-[10px] md:text-xs leading-relaxed mb-8">
+            Esta página não tem qualquer vínculo com o Facebook S/A e suas empresas, apenas usamos a plataforma para promover os nossos produtos. Ao sair da plataforma toda responsabilidade sobre produtos vendidos e ofertados é de inteira responsabilidade da nossa empresa, bem como se houver quaisquer eventualidades legais. Declaramos que o Facebook S/A não tem qualquer vínculo de associação em processos cíveis ou criminais.
           </p>
+          
+          <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl mb-8">
+            <p className="text-red-500/60 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+              Atenção: Não compre produtos piratas. Não vendemos em marketplaces como Mercado Livre, Shopee ou OLX.
+            </p>
+          </div>
+
+          <div className="text-white/40 text-[10px] md:text-xs">
+            © {new Date().getFullYear()} ACESSO CINEFLIX - Todos os direitos reservados.
+          </div>
         </div>
       </div>
     </footer>

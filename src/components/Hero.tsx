@@ -1,42 +1,87 @@
-import { siteConfig } from '@/config/links';
+'use client';
 import Image from 'next/image';
 
 export default function Hero() {
+  const heroImage = (
+    <div className="relative w-full max-w-[500px] lg:max-w-[650px] aspect-[16/9] lg:aspect-square group">
+      {/* Aura de brilho roxo profunda */}
+      <div className="absolute -inset-10 bg-[#BE63D1]/10 blur-[100px] rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-1000"></div>
+      
+      {/* Imagem com Máscara de Gradiente Suavizada */}
+      <div className="relative w-full h-full overflow-hidden">
+        <img
+          src="/assistir-cineflix-na-smart-tv-e-celular.webp"
+          alt="Acesso Cineflix Premium"
+          className="w-full h-full object-cover animate-float"
+          style={{
+            maskImage: 'radial-gradient(circle, black 40%, transparent 90%)',
+            WebkitMaskImage: 'radial-gradient(circle, black 40%, transparent 90%)'
+          }}
+        />
+      </div>
+    </div>
+  );
+
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-16 overflow-hidden">
-      {/* Background Gradient/Effect */}
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black py-10 lg:py-20">
+      {/* Background Poster Mosaic Effect */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-primary/10 to-background z-10" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-primary/20 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/80 to-black z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-black z-10" />
+        <img 
+          src="/mosaico-filmes-e-series-acesso-cineflix.webp" 
+          alt="Mosaico de Filmes e Séries Acesso Cineflix"
+          className="w-full h-full object-cover opacity-20 grayscale"
+        />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-          O Cinema na Sua Casa <br />
-          <span className="text-brand-primary">Sem Limites.</span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-2xl mx-auto">
-          Tenha acesso imediato aos lançamentos mais esperados, séries exclusivas e canais ao vivo. Tudo em um só lugar, com qualidade 4K.
-        </p>
+      <div className="relative z-20 max-w-7xl mx-auto px-4 w-full mt-52 lg:mt-0">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-24 w-full">
+          
+          {/* Lado do Conteúdo (Texto e Logo) */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+            
+            {/* LOGO NO TOPO */}
+            <div className="mb-6 lg:mb-14">
+               <img src="/acesso-cineflix-logo.svg" alt="Cineflix Logo" className="h-12 md:h-16 lg:h-[85px] w-auto" />
+            </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a 
-            href={siteConfig.affiliateLink}
-            className="w-full sm:w-auto bg-brand-primary hover:bg-brand-primary/90 text-white text-xl px-12 py-5 rounded-2xl font-bold transition-all transform hover:scale-105 shadow-2xl shadow-brand-primary/40 active:scale-95"
-          >
-            QUERO ACESSO IMEDIATO
-          </a>
-          <p className="text-sm text-foreground/60 italic">
-            *Ativação instantânea após o pagamento
-          </p>
-        </div>
+            {/* HEADLINE */}
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 lg:mb-6 uppercase tracking-tight">
+              Milhares de canais, <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BE63D1] to-[#E561A7]">
+                filmes e séries
+              </span>
+            </h1>
 
-        {/* Hero Illustration / Devices Preview Placeholder */}
-        <div className="mt-16 relative w-full aspect-video max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-           <div className="absolute inset-0 bg-slate-900/50 flex items-center justify-center">
-              <p className="text-white/30 text-sm font-mono">[ Espaço para Imagem WebP de Dispositivos / Interface ]</p>
-           </div>
+            {/* IMAGEM NO MOBILE (Aparece logo abaixo da headline) */}
+            <div className="block lg:hidden w-full mb-8">
+               <div className="flex justify-center">
+                  {heroImage}
+               </div>
+            </div>
+            
+            {/* DESCRIÇÃO */}
+            <p className="text-base md:text-xl text-white/80 mb-8 lg:mb-10 max-w-xl font-medium px-4 lg:px-0">
+              O catálogo mais completo do Brasil. Assista Netflix, Disney+, Premiere e centenas de canais ao vivo em qualquer dispositivo.
+            </p>
+
+            {/* BOTÃO */}
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 lg:px-0 mb-10 lg:mb-0">
+              <a 
+                href="#planos"
+                className="inline-block bg-[#BE63D1] hover:bg-[#E561A7] text-white text-lg lg:text-xl px-12 py-4 lg:py-5 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(190,99,209,0.4)] uppercase tracking-tight whitespace-nowrap"
+              >
+                Começar agora
+              </a>
+            </div>
+          </div>
+
+          {/* Lado da Imagem DESKTOP (Escondida no mobile nesta posição) */}
+          <div className="hidden lg:flex w-full lg:w-1/2 justify-center items-center">
+             {heroImage}
+          </div>
+
         </div>
       </div>
     </section>

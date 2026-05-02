@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Navbar from "@/components/Navbar";
 import StickyCTA from "@/components/StickyCTA";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,14 +12,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Acesso Cineflix - Assine Agora",
-  description: "O melhor conteúdo na palma da sua mão. Assine o Cineflix e tenha acesso imediato a milhares de filmes e séries.",
+  title: "CINEFLIX OFICIAL | Filmes, Séries e Canais sem Travamentos",
+  description: "A melhor experiência de entretenimento do Brasil. Assine agora o Cineflix e tenha acesso imediato a milhares de conteúdos com sinal satélite estável 24h.",
+  keywords: "cineflix, assinatura cineflix, renovar plano cineflix, streaming brasil, filmes e séries online",
   openGraph: {
-    title: "Acesso Cineflix",
-    description: "Assine agora e tenha o melhor conteúdo.",
+    title: "CINEFLIX OFICIAL",
+    description: "Milhares de conteúdos na palma da sua mão. Assine agora!",
     type: "website",
     locale: "pt_BR",
+    url: "https://acessocineflix.vip",
+    siteName: "Cineflix Oficial",
   },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
@@ -30,9 +39,11 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-black">
+        <Navbar />
         {children}
         <StickyCTA />
+        <CookieConsent />
       </body>
       <GoogleTagManager gtmId="GTM-XXXXXXX" />
     </html>

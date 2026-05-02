@@ -1,31 +1,30 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
+import SportsLeagues from '@/components/SportsLeagues';
+import MoviesShowcase from '@/components/MoviesShowcase';
+import CategoriesGrid from '@/components/CategoriesGrid';
+import ChannelGrid from '@/components/ChannelGrid';
 import Pricing from '@/components/Pricing';
-import Testimonials from '@/components/Testimonials';
+import TrustSection from '@/components/TrustSection';
 import FAQ from '@/components/FAQ';
+import SupportCTA from '@/components/SupportCTA';
 import Footer from '@/components/Footer';
+import StickyMobileButton from '@/components/StickyMobileButton';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <div className="animate-fade-in-up">
-        <Hero />
-      </div>
-      <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-        <Features />
-      </div>
-      <div className="animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-        <Pricing />
-      </div>
-      <div className="animate-fade-in-up" style={{ animationDelay: '600ms' }}>
-        <Testimonials />
-      </div>
-      <div className="animate-fade-in-up" style={{ animationDelay: '800ms' }}>
-        <FAQ />
-      </div>
+    <main className="min-h-screen bg-black">
+      <Hero />
+      <SportsLeagues />
+      <MoviesShowcase />
+      <CategoriesGrid />
+      <ChannelGrid />
+      <Pricing />
+      <TrustSection />
+      <FAQ />
+      <SupportCTA />
       <Footer />
+      <StickyMobileButton />
     </main>
   );
 }
