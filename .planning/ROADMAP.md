@@ -2,11 +2,11 @@
 
 ## Phase 1: Setup e Infraestrutura
 **Goal**: Inicializar o projeto Next.js com TailwindCSS e configurar a fundação arquitetural para SEO e rastreamento.
-- [ ] Inicializar app Next.js (App Router).
-- [ ] Configurar o TailwindCSS e estender o tema com a identidade visual da marca (Cores e Fontes).
-- [ ] Criar o arquivo de configuração de links de afiliado (`src/config/links.ts`).
-- [ ] Configurar metadados globais para SEO (Title, Description, OpenGraph) no `layout.tsx`.
-- [ ] Implementar a estrutura base para carregamento assíncrono dos Pixels (Google/Facebook) usando `next/third-parties`.
+- [x] Inicializar app Next.js (App Router).
+- [x] Configurar o TailwindCSS e estender o tema com a identidade visual da marca (Cores e Fontes).
+- [x] Criar o arquivo de configuração de links de afiliado (`src/config/links.ts`).
+- [x] Configurar metadados globais para SEO (Title, Description, OpenGraph) no `layout.tsx`.
+- [x] Implementar a estrutura base para carregamento assíncrono dos Pixels (Google/Facebook) usando `next/third-parties`.
 
 ## Phase 2: Core Components & Layout (Above the Fold)
 **Goal**: Desenvolver as estruturas de navegação e a primeira tela de impacto (Hero), que é a mais crítica para a conversão.

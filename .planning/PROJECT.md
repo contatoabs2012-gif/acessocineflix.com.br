@@ -14,7 +14,9 @@ Velocidade extrema e design persuasivo para maximizar a conversão de cliques em
 
 <!-- Shipped and confirmed valuable. -->
 
-(None yet — ship to validate)
+- ✓ Implementar framework Next.js — Phase 1
+- ✓ Otimizar SEO técnico (Meta tags, Semântica, OpenGraph) — Phase 1
+- ✓ Configuração centralizada de links de afiliado — Phase 1
 
 ### Active
 
@@ -22,9 +24,6 @@ Velocidade extrema e design persuasivo para maximizar a conversão de cliques em
 
 - [ ] Clonar a estrutura e identidade visual do site acessocineflix.vip
 - [ ] Aplicar copywriting persuasivo focado em público fundo de funil (usuários prontos para comprar)
-- [ ] Implementar framework Next.js para garantir máximo desempenho e tempos de carregamento mínimos
-- [ ] Otimizar SEO técnico (Meta tags, Semântica, OpenGraph, performance para Core Web Vitals)
-- [ ] Configurar todos os botões de ação (Call to Action) para os links de checkout do afiliado
 - [ ] Garantir segurança elevada no frontend
 - [ ] Otimizar e servir as imagens fornecidas pelo usuário em formato WebP e os logos em SVG
 
