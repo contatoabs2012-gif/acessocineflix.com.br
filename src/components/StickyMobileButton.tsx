@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const plans = [
   { name: 'Plano START 1 Mês', price: 'R$ 20,00', monthly: '', screens: 1, link: 'https://go.atomopay.com.br/pqv5zhbrfx?affh=37lpa5v9ld', highlight: false },
   { name: 'Plano PRO 6 Meses', price: 'R$ 69,90', monthly: '| R$ 11,65 MÊS', screens: 2, link: 'https://go.atomopay.com.br/mruuv?affh=37lpa5v9ld', highlight: false },
-  { name: 'Plano PRIME 1 Ano', price: 'R$ 97,00', monthly: '| R$ 8,08 MÊS', screens: 3, link: 'https://go.atomopay.com.br/cnjz2?affh=37lpa5v9ld', highlight: true },
+  { name: 'Plano PRIME 1 Ano', price: 'R$ 97,00', monthly: '| R$ 8,08 MÊS', screens: 4, link: 'https://go.atomopay.com.br/cnjz2?affh=37lpa5v9ld', highlight: true },
   { name: 'Plano ULTIMATE 2 Anos', price: 'R$ 149,90', monthly: '| R$ 6,24 MÊS', screens: 4, link: 'https://go.atomopay.com.br/5aoa7?affh=37lpa5v9ld', highlight: true },
 ];
 
@@ -75,10 +75,10 @@ export default function StickyMobileButton() {
             onClick={() => setIsOpen(false)}
           />
           <div className="relative w-full h-full flex flex-col justify-end">
-            <div className="relative w-full bg-[#0a0a0a] rounded-t-[40px] p-5 animate-slide-up max-h-[95vh] overflow-y-auto border-t border-white/10 shadow-[0_-20px_50px_rgba(190,99,209,0.3)]">
-              <div className="w-12 h-1 bg-white/20 rounded-full mx-auto mb-4" onClick={() => setIsOpen(false)} />
+            <div className="relative w-full bg-[#0a0a0a] rounded-t-[40px] p-4 animate-slide-up max-h-[98vh] overflow-y-auto border-t border-white/10 shadow-[0_-20px_50px_rgba(190,99,209,0.3)]">
+              <div className="w-12 h-1 bg-white/20 rounded-full mx-auto mb-3" onClick={() => setIsOpen(false)} />
               
-              <h3 className="text-lg font-bold text-white text-center mb-4 uppercase tracking-tight">ESCOLHA SEU PLANO PREFERIDO</h3>
+              <h3 className="text-sm font-bold text-white text-center mb-3 uppercase tracking-tight">ESCOLHA SEU PLANO PREFERIDO</h3>
 
               <div className="space-y-3 mb-6">
                 {plans.map((plan, index) => (
@@ -90,31 +90,31 @@ export default function StickyMobileButton() {
                       : 'bg-white shadow-[0_0_15px_rgba(255,255,255,0.1)]'
                     }`}
                   >
-                    <div className="bg-[#1a1a1a] rounded-[23px] p-4 flex flex-col items-center">
+                    <div className="bg-[#1a1a1a] rounded-[23px] p-3 flex flex-col items-center">
                       {/* Título e Mensal na mesma linha */}
-                      <h4 className="text-white font-bold text-sm uppercase tracking-tight mb-4 text-center w-full">
+                      <h4 className="text-white font-bold text-[10px] uppercase tracking-tight mb-2 text-center w-full">
                         {plan.name} <span className="text-[#BE63D1] ml-1">{plan.monthly}</span>
                       </h4>
                       
                       {/* Linha de Ação: Preço Total + Renovar */}
-                      <div className="flex items-center justify-center gap-4 w-full mb-4 px-1">
-                        <span className="text-[#BE63D1] font-bold text-[25px] tracking-tight drop-shadow-[0_0_8px_rgba(190,99,209,0.4)]">
+                      <div className="flex items-center justify-center gap-3 w-full mb-2 px-1">
+                        <span className="text-[#BE63D1] font-bold text-[20px] tracking-tight drop-shadow-[0_0_8px_rgba(190,99,209,0.4)]">
                           {plan.price}
                         </span>
                         <a 
                           href={plan.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`px-10 py-3 rounded-full font-bold text-[15px] bg-gradient-to-r from-[#4b3c7d] to-[#BE63D1] text-white shadow-md active:scale-95 transition-all uppercase ${
+                          className={`px-6 py-2 rounded-full font-bold text-[12px] bg-gradient-to-r from-[#4b3c7d] to-[#BE63D1] text-white shadow-md active:scale-95 transition-all uppercase ${
                             plan.highlight ? 'animate-neon-pulse' : ''
                           }`}
                         >
                           RENOVAR
                         </a>
                       </div>
-
+ 
                       {/* Rodapé: Número + TELAS + Ícones em uma linha */}
-                      <div className="flex items-center justify-center gap-3 pt-3 border-t border-white/5 w-full">
+                      <div className="flex items-center justify-center gap-2 pt-2 border-t border-white/5 w-full">
                         <div className="flex items-center gap-1">
                           <span className="text-white font-black text-xs">{plan.screens}</span>
                           <span className="text-white font-bold text-[10px] uppercase">TELAS</span>
