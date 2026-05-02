@@ -35,19 +35,16 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto px-4 w-full mt-44 lg:mt-0">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 w-full mt-40 lg:mt-0">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-24 w-full">
           
           {/* Lado do Conteúdo (Texto e Logo) */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
             
-            {/* LOGO NO TOPO */}
-            <div className="mb-6 lg:mb-14">
-               <img src="/acesso-cineflix-logo.svg" alt="Cineflix Logo" className="h-12 md:h-16 lg:h-[85px] w-auto" />
-            </div>
+
 
             {/* HEADLINE */}
-            <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 lg:mb-6 uppercase tracking-tight">
+            <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 lg:mb-6 uppercase tracking-tight">
               Milhares de canais, <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BE63D1] to-[#E561A7]">
                 filmes e séries

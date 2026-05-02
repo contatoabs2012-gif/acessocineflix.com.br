@@ -40,7 +40,7 @@ export default function StickyMobileButton() {
       `}</style>
 
       {/* Botão Fixo no Topo com Efeito de Shrink - Ajustado para top-20 */}
-      <div className={`lg:hidden fixed top-20 left-0 w-full z-[100] transition-all duration-300 transform ${
+      <div className={`lg:hidden fixed top-[70px] left-0 w-full z-[100] transition-all duration-300 transform ${
         scrolled ? 'scale-90 opacity-95 -translate-y-2' : 'scale-100 opacity-100 translate-y-0'
       }`}>
         <div className="bg-black/90 backdrop-blur-md border-b border-white/10 px-4 py-4">
