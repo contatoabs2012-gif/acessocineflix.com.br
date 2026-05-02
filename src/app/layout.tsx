@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: "CINEFLIX OFICIAL | Filmes, Séries e Canais sem Travamentos",
   description: "A melhor experiência de entretenimento do Brasil. Assine agora o Cineflix e tenha acesso imediato a milhares de conteúdos com sinal satélite estável 24h.",
   keywords: "cineflix, assinatura cineflix, renovar plano cineflix, streaming brasil, filmes e séries online",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     title: "CINEFLIX OFICIAL",
     description: "Milhares de conteúdos na palma da sua mão. Assine agora!",
@@ -39,6 +44,9 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className="min-h-full flex flex-col bg-black">
         <Navbar />
         {children}
