@@ -58,7 +58,7 @@ export default function StickyMobileButton() {
                     JÁ É NOSSO CLIENTE?
                   </span>
                 )}
-                <span className={`${scrolled ? 'text-sm' : 'text-[24px]'} leading-none font-black tracking-[1px] [text-shadow:_0_2px_8px_rgba(75,0,130,1)]`}>
+                <span className={`${scrolled ? 'text-sm' : 'text-[20px]'} leading-none font-bold tracking-[1px] [text-shadow:_0_2px_8px_rgba(75,0,130,1)]`}>
                   RENOVE AGORA
                 </span>
               </div>
@@ -69,7 +69,7 @@ export default function StickyMobileButton() {
 
       {/* Drawer Compacto com Pulsação Neon nos Botões Premiums */}
       {isOpen && (
-        <div className="fixed inset-0 z-[200] animate-fade-in lg:hidden">
+        <div className="fixed inset-0 z-[9999] animate-fade-in lg:hidden">
           <div 
             className="absolute inset-0 bg-black/80 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
